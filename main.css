@@ -1,0 +1,297 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem !important;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1rem !important;
+    font-weight: 600;
+}
+
+iframe{
+    height: 500px !important;
+}
+
+i{
+    color: #068A62;
+}
+
+.row{
+    width: 80%;
+    margin: 1rem auto;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* ------------------------main------------------------- */
+
+.row .details{
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+}
+
+.row .details h1{
+    padding: 2rem 0 0 1rem;
+}
+
+.row .details p{
+    padding: 0 0 0 1rem;
+}
+
+.row .details img.grn-elp{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.row .details img.brwn-elp{
+    position: absolute;
+    bottom: 48px;
+    right: 40px;
+}
+
+.row .details .contacts{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 0 1rem;
+}
+
+.row .details .contacts i{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem ;
+}
+
+.row .details .contacts .fa-location-dot p{
+    padding-left: 25px;
+}
+
+.row .details .contacts p{
+    color: black;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.row .details .contacts i::before {
+    padding-right: 1rem;
+}
+
+.row .details .group img{
+    width: 20%;    
+}
+
+.row .details .group p{
+    margin: 0;
+    color: #068A62;
+    padding-left: 2rem;
+}
+
+.row .details .group{
+    position: absolute;
+    bottom: 0;
+}
+
+.row .map iframe{
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+/* --------------------Others------------------------------- */
+.others .row .pl-4{
+    position: relative;
+}
+
+.others .row .pl-4 img{
+    position: absolute;
+    width: 89.3%;
+    z-index: -1;
+}
+
+.others .row .pl-4 .details{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.others .row .pl-4 .details h1{
+    text-align: center;
+}
+
+.others .row .pl-4 .details p{
+    text-align: center;
+}
+
+.others .row .pl-4 .details .contacts{
+    padding-bottom: 1.5rem;
+}
+
+.others .row .pr-4 .details .group{
+    position: static;
+    text-align: center;
+}
+
+.others .row .pr-4 .details .group p{
+    padding: 0;
+}
+
+.others .row .pr-4 .details .group img{
+    width: 20%;
+    position: static;
+}
+
+
+
+/* -------------------RESPONSIVE---------------------- */
+
+@media (max-width:1200px){
+    h1{
+        font-size: 2rem !important;
+    }
+
+    p{
+        font-size: 0.7rem !important;
+    }
+
+    iframe{
+        height: 450px !important;
+    }
+
+    .row .details .contacts p{
+        font-size: 0.7rem;
+    }
+
+    .row .details img.grn-elp{
+        width: 40%;
+    }
+    
+    .row .details img.brwn-elp{
+        width: 30%;
+    }
+
+    .row .details .group p{
+        padding-left: 1rem;
+    }
+
+    .row .details .contacts .fa-location-dot p{
+        padding-left: 1.3rem;
+    }
+
+    .others .row .pl-4 img{
+        width: 85%;
+    }
+}
+
+@media (max-width:992px){
+    h1{
+        font-size: 1.5rem !important;
+    }
+
+    p{
+        font-size: 0.5rem !important;
+    }
+
+    .row .details .contacts p{
+        font-size: 0.5rem;
+    }
+
+    iframe{
+        height: 350px !important;
+    }
+
+    .row .details img.grn-elp{
+        width: 35%;
+    }
+    
+    .row .details img.brwn-elp{
+        width: 20%;
+    }
+
+    .others .row .pl-4 img{
+        width: 81.8%;
+    }
+}
+
+@media (max-width:768px){
+    h1{
+        font-size: 1.5rem !important;
+    }
+
+    p{
+        font-size: 0.5rem !important;
+    }
+
+    .row .details .contacts p{
+        font-size: 0.5rem;
+    }
+
+    iframe{
+        height: 300px !important;
+    }
+
+    .row .details .contacts i{
+        font-size: 0.8rem;
+    }
+
+    .others .row {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 0 !important;
+    }
+
+    .others .row .col-md-4{
+        padding-bottom: 2rem;
+    }
+
+    .others .row .col-md-4 .details{
+        width: 250px;
+        height: 300px;
+    }
+
+    .others .row .pl-4 img {
+        width: 97.7%;
+    }
+
+}
+
+@media (max-width:576px){
+    .row .details{
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .row .map{
+        width: 85%;
+        margin: 0 auto;
+        height: 300px;
+    }
+
+    .others .row .pl-4 img {    
+        width: 43.3%;
+        margin-left: 8.7rem;
+    } 
+
+    .others .row .details img{
+        margin: 0;
+    }
+
+}
