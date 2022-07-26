@@ -86,21 +86,6 @@ i{
     padding-right: 1rem;
 }
 
-.row .details .group img{
-    width: 20%;    
-}
-
-.row .details .group p{
-    margin: 0;
-    color: #068A62;
-    padding-left: 2rem;
-}
-
-.row .details .group{
-    position: absolute;
-    bottom: 0;
-}
-
 .row .map iframe{
     border-radius: 30px;
 }
@@ -113,49 +98,54 @@ i{
 
 
 /* --------------------Others------------------------------- */
-.others .row .pl-4{
+.others .row .card{
+    width: 24rem;
     position: relative;
 }
 
-.others .row .pl-4 img{
-    position: absolute;
-    width: 89.3%;
+.others .row .card img{
     z-index: -1;
+    position: absolute;
+    top: -8px;
+    width: 100%;
 }
 
-.others .row .pl-4 .details{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.others .row .pl-4 .details h1{
+.others .row .card .card-body{
     text-align: center;
 }
 
-.others .row .pl-4 .details p{
+.others .row .card .card-body p{
+    padding-bottom: 1rem;
+}
+
+.others .row .card .card-body .contacts i{
+    display: flex;
+}
+
+.others .row .card .card-body .contacts i p{
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 1rem;
+
+}
+
+/* --------------------GROUP---------------------------- */
+.group{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.group h6{
     text-align: center;
 }
 
-.others .row .pl-4 .details .contacts{
-    padding-bottom: 1.5rem;
-}
-
-.others .row .pr-4 .details .group{
-    position: static;
+.group .img{
     text-align: center;
 }
 
-.others .row .pr-4 .details .group p{
-    padding: 0;
+.group .img img{
+    width: 10%;
 }
-
-.others .row .pr-4 .details .group img{
-    width: 20%;
-    position: static;
-}
-
 
 
 /* -------------------RESPONSIVE---------------------- */
@@ -185,16 +175,16 @@ i{
         width: 30%;
     }
 
-    .row .details .group p{
-        padding-left: 1rem;
-    }
-
     .row .details .contacts .fa-location-dot p{
         padding-left: 1.3rem;
     }
 
-    .others .row .pl-4 img{
-        width: 85%;
+    .others .row .card{
+        width: 18rem;
+    }
+
+    .others .row .card img {
+        top: -6px;
     }
 }
 
@@ -223,9 +213,10 @@ i{
         width: 20%;
     }
 
-    .others .row .pl-4 img{
-        width: 81.8%;
+    .others .row .card {
+        width: 14rem;
     }
+    
 }
 
 @media (max-width:768px){
@@ -257,17 +248,12 @@ i{
         padding-bottom: 0 !important;
     }
 
-    .others .row .col-md-4{
-        padding-bottom: 2rem;
+    .others .row .card {
+       margin-bottom: 2rem;
     }
 
-    .others .row .col-md-4 .details{
-        width: 250px;
-        height: 300px;
-    }
-
-    .others .row .pl-4 img {
-        width: 97.7%;
+    .group .img img{
+        width: 5rem;
     }
 
 }
@@ -292,6 +278,10 @@ i{
 
     .others .row .details img{
         margin: 0;
+    }
+
+    .group .img img{
+        width: 5rem;
     }
 
 }
